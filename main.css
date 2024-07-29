@@ -1,0 +1,179 @@
+.navbar { 
+    background-color: #030303;
+}
+
+.nav .nav-link.active { 
+    background-color: white;
+    color: #EFBF04;
+}
+
+.nav .nav-link, .navbar-brand, .navbar-brand:hover{ 
+    color: white;
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    font-size: 42px;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #EFBF04;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBzdHJva2U9IiNFRkJGMDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xIDIuNWgxNE0xIDhoMTRNMSAxMy41aDE0Ij48L3BhdGg+PC9zdmc+Cg==');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: transform 0.6s ease, width 0.6s ease, height 0.6s ease;
+}  
+
+.navbar-toggler.clicked .navbar-toggler-icon {
+    transform: rotate(180deg);
+    height: 15px; 
+}
+
+.collapse {
+    transition: height 0.5s ease;
+}
+
+.carousel-item{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+
+}
+
+.carousel-item.active { 
+    opacity: 1; 
+    transition: opacity ease-in-out;
+}
+
+.carousel-item:not(.active) {
+    opacity: 0;
+  }
+
+.carousel-item video {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(10%);
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #EFBF04;
+  }
+
+  .carousel-caption > p { 
+    color: #ffffff;
+  }
+
+
+.section-title { 
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.section-title > span { 
+    color:#ffcc00;
+    text-shadow: 
+    1px 1px 0 #000,  
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    0 0 5px #161616;
+}
+
+.section-content { 
+    font-family: "Teachers", sans-serif;
+}
+
+.section-content > span { 
+    color: #ffffff;
+    text-shadow: 
+    1px 1px 0 #000,  
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        0 0 5px #000000;
+}
+
+.section-color { 
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    display: flex; 
+    gap: 20px;
+  }
+  
+ul li {
+    margin: 10px 0;
+  }
+
+ul li a {
+    text-decoration: none; 
+    color: inherit; 
+    display: flex;
+    align-items: center;
+  }
+
+ul li a i {
+    margin-right: 8px; 
+  }
+
+.btn{
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #ffcc00;
+padding: 10px 30px;
+border: none;
+box-shadow: none;
+border-radius: 10px;
+transition : 1728ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+  
+.btn:hover{ 
+transition : 1728ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+.card { 
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.scroll-on-hover:hover {
+    overflow-y: auto;
+}
