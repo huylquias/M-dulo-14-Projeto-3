@@ -44,10 +44,10 @@
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: black;
-
 }
-
+#carousel-bg { 
+    background-color: black;
+}
 .carousel-item.active { 
     opacity: 1; 
     transition: opacity ease-in-out;
@@ -58,7 +58,7 @@
   }
 
 .carousel-item video {
-    background-color: black;
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -176,4 +176,13 @@ border: solid 2px #0066cc;
 
 .scroll-on-hover:hover {
     overflow-y: auto;
+}
+
+#product-img { 
+    max-width: 30%;
+}
+
+#price { 
+    margin-top: 10px;
+    font-style: italic;
 }

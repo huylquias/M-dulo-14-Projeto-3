@@ -55,14 +55,14 @@
         <section id="about-store">
             <div class="carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000">
+                    <div id="carousel-bg" class="carousel-item active" data-bs-interval="5000">
                         <video src="./media/Introducing iPhone 15 WOW Apple.mp4" style="object-fit: cover; height: 100%;" autoplay muted loop></video>
                         <div class="carousel-caption">
                             <h1>Goldcell</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dicta cumque ullam iste laudantium voluptate amet obcaecati nostrum molestias natus aut asperiores reprehenderit, neque aliquid, aspernatur magni veniam alias qui.</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
+                    <div id="carousel-bg" class="carousel-item" data-bs-interval="5000">
                         <video src="./media/Meet Xiaomi 14 Lens to legend.mp4" autoplay muted loop></video>
                         <div class="carousel-caption">
                             <div class="carousel-caption">
@@ -149,9 +149,27 @@
                         <div class="card">
                             
                             <div class="card-body">
-                              <h5 class="card-title">Agende a visita de nossos técnicos!</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title section-title">Aparelhos <span>mais vendidos <i class="bi bi-fire"></i></span></h5>
+                              <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="product-info">
+                                            
+                                            <h3 class="card-title">Note 13 Pro</h3>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img id="product-img" src="./media/pngwing.com.png" alt="Note 13 Pro">
+                                                </div>
+                                                
+                                            </div>
+                                            <h5 id="price">R$ 1.998,00</h5>
+                                            <a href="#" class="btn">Confira já!</a>
+                                            <button></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -159,7 +177,7 @@
                         <div class="card">
                             
                             <div class="card-body">
-                              <h5 class="card-title">Special title treatment</h5>
+                              <h5 class="card-title">Área do cliente</h5>
                               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                               <a href="#" class="btn">Go somewhere</a>
                             </div>
@@ -170,6 +188,6 @@
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="./main.js"></script>   
 </body>
 </html>
