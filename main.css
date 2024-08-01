@@ -138,31 +138,33 @@ ul li a i {
   }
 
 .btn{
-font-family: Roboto, sans-serif;
-font-weight: 0;
-font-size: 14px;
-color: #fff;
-background-color: #ffcc00;
-padding: 10px 30px;
-border: none;
-box-shadow: none;
-border-radius: 10px;
-transition : 1728ms;
-transform: translateY(0);
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
-}
-  
-.btn:hover{ 
-transition : 1728ms;
-padding: 10px 50px;
-transform : translateY(-0px);
-background-color: #fff;
-color: #0066cc;
-border: solid 2px #0066cc;
-}
+    display: fixed;
+    cursor: pointer;
+    border: 0px solid #ffcc00;
+    font-family: "Teachers", sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    transition: 500ms;
+    width: 147px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
+    background: rgb(255, 204, 0);
+    --hover-width: 144px;
+    --hover-bgc: #000000;
+    --hover-color: #ffffff;
+    --hover-borderc: #ffcc00;
+    --hover-borderSize: 2px;
+    }
+    
+    .btn:hover{
+    color: rgb(255, 255, 255);
+    width: 145px;
+    background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-color: rgb(255, 204, 0);
+    border-width: 2px;
+    border-style: solid;
+    }
 
 .card { 
     height: 300px;
@@ -185,4 +187,13 @@ border: solid 2px #0066cc;
 #price { 
     margin-top: 10px;
     font-style: italic;
+}
+
+#product-name-info { 
+    font-style: italic;
+}
+
+#footer { 
+
+    background-color: #000000;
 }
