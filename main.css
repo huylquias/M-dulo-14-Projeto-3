@@ -5,12 +5,12 @@
   background-color: #030303;
 }
 
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
   background-color: white;
   color: #efbf04;
 }
 
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover {
   color: white;
@@ -194,12 +194,12 @@ ul li a i {
   background-color: #000000;
 }
 
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
   background-color: white;
   color: #efbf04;
 }
 
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover {
   color: white;
@@ -208,13 +208,13 @@ ul li a i {
   font-weight: 500;
 }
 
-.navbar-brand {
+#cabecalho .navbar-brand {
   font-size: 42px;
   font-family: "Noto Sans JP", sans-serif;
   color: #efbf04;
 }
 
-.navbar-toggler .navbar-toggler-icon {
+#cabecalho .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBzdHJva2U9IiNFRkJGMDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xIDIuNWgxNE0xIDhoMTRNMSAxMy41aDE0Ij48L3BhdGg+PC9zdmc+Cg==");
   display: inline-block;
   width: 24px;
@@ -352,6 +352,31 @@ ul li a i {
   border-style: solid;
 }
 
+.nav-menu .nav-link.active {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.btn-menu {
+  font-family: "Teachers", sans-serif;
+  text-decoration: none;
+  margin-top: 5px;
+  color: #ffcc00;
+  outline: none;
+}
+.btn-menu:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  color: #ffcc00;
+}
+.btn-menu:active { 
+  transform: scale(0.90);
+}
+
+.btn-menu:focus,
+.btn-menu:visited {
+  color: #ffcc00;
+  outline: none;
+}
 .card {
   height: 300px;
   display: flex;
