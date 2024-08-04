@@ -90,6 +90,11 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.marktext { 
+  color: #ffcc00;
+  font-family: "Noto Sans JP", sans-serif; 
+}
+
 .section-title > span {
   color: #ffcc00;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
@@ -108,6 +113,10 @@
 
 .section-color {
   background-color: #ffffff;
+}
+
+.hidden { 
+display: none;
 }
 
 ul {
