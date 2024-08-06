@@ -90,9 +90,9 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.marktext { 
+.marktext {
   color: #ffcc00;
-  font-family: "Noto Sans JP", sans-serif; 
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .section-title > span {
@@ -115,8 +115,8 @@
   background-color: #ffffff;
 }
 
-.hidden { 
-display: none;
+.hidden {
+  display: none;
 }
 
 ul {
@@ -377,8 +377,8 @@ ul li a i {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #ffcc00;
 }
-.btn-menu:active { 
-  transform: scale(0.90);
+.btn-menu:active {
+  transform: scale(0.9);
 }
 
 .btn-menu:focus,
@@ -394,11 +394,31 @@ ul li a i {
   align-items: center;
   text-align: center;
   overflow-y: hidden;
+  margin: 10px;
+  border-radius: 10px
 }
 
 .scroll-on-hover:hover {
   overflow-y: auto;
 }
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px
+}
+
+.card-img-top {
+  padding-top: 10px;
+  width: 15vh; 
+  height: 20vh; 
+  object-fit: scale-down; 
+}
+
+#card-title-product { 
+  text-decoration: none; 
+  color: inherit; 
+}
+
 
 #product-img {
   max-width: 30%;
@@ -411,8 +431,4 @@ ul li a i {
 
 #product-name-info {
   font-style: italic;
-}
-
-#footer {
-  background-color: #000000;
 }
