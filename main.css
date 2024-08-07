@@ -1,6 +1,9 @@
-.navbar {
-  background-color: #030303;
+/* HTML */
+body {
+  font-family: "Teachers", sans-serif;
 }
+
+/* NAVBAR */
 .navbar {
   background-color: #030303;
 }
@@ -15,195 +18,6 @@
 .navbar-brand:hover {
   color: white;
   font-family: "Teachers", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-}
-
-.navbar-brand {
-  font-size: 42px;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #efbf04;
-}
-
-.navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBzdHJva2U9IiNFRkJGMDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xIDIuNWgxNE0xIDhoMTRNMSAxMy41aDE0Ij48L3BhdGg+PC9zdmc+Cg==");
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: transform 0.6s ease, width 0.6s ease, height 0.6s ease;
-}
-
-.navbar-toggler.clicked .navbar-toggler-icon {
-  transform: rotate(180deg);
-  height: 15px;
-}
-
-.collapse {
-  transition: height 0.5s ease;
-}
-
-.carousel-item {
-  position: relative;
-  width: 100%;
-  height: 500px;
-}
-#carousel-bg {
-  background-color: black;
-}
-.carousel-item.active {
-  opacity: 1;
-  transition: opacity ease-in-out;
-}
-
-.carousel-item:not(.active) {
-  opacity: 0;
-}
-
-.carousel-item video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(10%);
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #efbf04;
-}
-
-.carousel-caption > p {
-  color: #ffffff;
-}
-
-.section-title {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.marktext {
-  color: #ffcc00;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.section-title > span {
-  color: #ffcc00;
-  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000, 0 0 5px #161616;
-}
-
-.section-content {
-  font-family: "Teachers", sans-serif;
-}
-
-.section-content > span {
-  color: #ffffff;
-  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000, 0 0 5px #000000;
-}
-
-.section-color {
-  background-color: #ffffff;
-}
-
-.hidden {
-  display: none;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-ul li {
-  margin: 10px 0;
-}
-
-ul li a {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  align-items: center;
-}
-
-ul li a i {
-  margin-right: 8px;
-}
-
-.btn {
-  display: fixed;
-  cursor: pointer;
-  border: 0px solid #ffcc00;
-  font-family: "Teachers", sans-serif;
-  font-size: 15px;
-  color: rgb(0, 0, 0);
-  padding: 10px 30px;
-  transition: 500ms;
-  width: 147px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  border-radius: 10px;
-  background: rgb(255, 204, 0);
-  --hover-width: 144px;
-  --hover-bgc: #000000;
-  --hover-color: #ffffff;
-  --hover-borderc: #ffcc00;
-  --hover-borderSize: 2px;
-}
-
-.btn:hover {
-  color: rgb(255, 255, 255);
-  width: 145px;
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  border-color: rgb(255, 204, 0);
-  border-width: 2px;
-  border-style: solid;
-}
-
-.scroll-on-hover:hover {
-  overflow-y: auto;
-}
-
-#product-img {
-  max-width: 30%;
-}
-
-#price {
-  margin-top: 10px;
-  font-style: italic;
-}
-
-#product-name-info {
-  font-style: italic;
-}
-
-#footer {
-  background-color: #000000;
-}
-
-#cabecalho .nav .nav-link.active {
-  background-color: white;
-  color: #efbf04;
-}
-
-#cabecalho .nav .nav-link,
-.navbar-brand,
-.navbar-brand:hover {
-  color: white;
-  font-family: "Teachers", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
 }
 
@@ -233,14 +47,17 @@ ul li a i {
   transition: height 0.5s ease;
 }
 
+/* Carousel */
 .carousel-item {
   position: relative;
   width: 100%;
   height: 500px;
 }
+
 #carousel-bg {
   background-color: black;
 }
+
 .carousel-item.active {
   opacity: 1;
   transition: opacity ease-in-out;
@@ -274,6 +91,7 @@ ul li a i {
   color: #ffffff;
 }
 
+/* TITLES AND CONTENTS  */
 .section-title {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -298,6 +116,7 @@ ul li a i {
   background-color: #ffffff;
 }
 
+/* LIST */
 ul {
   list-style-type: none;
   padding: 0;
@@ -320,8 +139,8 @@ ul li a i {
   margin-right: 8px;
 }
 
+/* BTN */
 .btn {
-  display: fixed;
   cursor: pointer;
   border: 0px solid #ffcc00;
   font-family: "Teachers", sans-serif;
@@ -351,6 +170,7 @@ ul li a i {
   border-style: solid;
 }
 
+/* MENU */
 .nav-menu .nav-link.active {
   background-color: #ffcc00;
   color: #000000;
@@ -363,10 +183,12 @@ ul li a i {
   color: #ffcc00;
   outline: none;
 }
+
 .btn-menu:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: #ffcc00;
 }
+
 .btn-menu:active {
   transform: scale(0.9);
 }
@@ -376,6 +198,8 @@ ul li a i {
   color: #ffcc00;
   outline: none;
 }
+
+/* CARDS MALDITOS */
 .card {
   height: 300px;
   display: flex;
@@ -387,10 +211,6 @@ ul li a i {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.scroll-on-hover:hover {
-  overflow-y: auto;
 }
 
 .card:hover {
@@ -420,20 +240,15 @@ ul li a i {
 
 .card-text {
   max-height: 100px;
-  overflow-y: auto;
+  overflow-y: hidden;
   margin-bottom: 10px;
 }
 
-.card-link { 
-  display: block;
-}
-
 #price {
-  margin-top: 10px;
+  align-items: first baseline;
   font-style: italic;
 }
 
 #product-name-info {
   font-style: italic;
-  object-fit: cover;
 }

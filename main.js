@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     toggler.classList.toggle("clicked");
   });
 });
-
 document
   .getElementById("toggleLink")
   .addEventListener("click", function (event) {
