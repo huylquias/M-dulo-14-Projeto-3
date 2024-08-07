@@ -1,524 +1,412 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="./main.css" />
-    <title>Goldcell Itaocara</title>
-  </head>
 
-  <body>
-    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
-      <div class="container">
-        <h1 class="navbar navbar-brand m-0 section-title">Goldcell</h1>
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu-navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav
-          class="navbar-collapse collapse justify-content-end"
-          id="menu-navigation">
-          <ul class="nav nav-pills d-block d-md-flex">
-            <li id="" class="nav-item">
-              <a href="#about-store" id="toggleLink" class="nav-link">
-                <i class="bi bi-house-fill me-1"></i>
-                Nossa Loja
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#products" class="nav-link">
-                <i class="bi bi-phone-fill me-1"></i>
-                Celulares Mais Vendidos
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="bi bi-screwdriver me-1"></i>
-                Assistência Técnica
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="bi bi-chat-fill me-1"></i>
-                Fale Conosco
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
-      <section id="about-store">
-        <div class="carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div
-              id="carousel-bg"
-              class="carousel-item active"
-              data-bs-interval="5000">
-              <video
-                src="./media/Introducing iPhone 15 WOW Apple.mp4"
-                style="object-fit: cover; height: 100%"
-                autoplay
-                muted
-                loop></video>
-              <div class="carousel-caption">
-                <h1>Goldcell</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Porro dicta cumque ullam iste laudantium voluptate amet
-                  obcaecati nostrum molestias natus aut asperiores
-                  reprehenderit, neque aliquid, aspernatur magni veniam alias
-                  qui.
-                </p>
-              </div>
-            </div>
-            <div id="carousel-bg" class="carousel-item" data-bs-interval="5000">
-              <video
-                src="./media/Meet Xiaomi 14 Lens to legend.mp4"
-                autoplay
-                muted
-                loop></video>
-              <div class="carousel-caption">
-                <div class="carousel-caption">
-                  <h2>Goldcell</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="toggleSelection" class="hidden pt-5 pb-5 section-color">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-5">
-                <img
-                  src="./media/loja.jpg"
-                  class="dblock w-100 rounded"
-                  alt="interior da loja goldcell" />
-              </div>
-              <div class="col-md-7">
-                <h2 class="section-title">Sobre nossa <span>Loja</span></h2>
-                <p class="section-content">
-                  Bem-vindo à <b>GOLDCELL</b>, sua loja de referência em
-                  <span class="keyword"><strong>celulares</strong></span
-                  >,
-                  <span class="keyword"
-                    ><strong>acessórios para celulares</strong></span
-                  >
-                  e <span class="keyword"><strong>eletrônicos</strong></span> em
-                  <em>Itaocara</em>. Desde junho de 2021, temos nos dedicado a
-                  oferecer produtos de
-                  <span class="keyword"><strong>alta qualidade</strong></span> e
-                  serviços de
-                  <span class="keyword"
-                    ><strong>assistência técnica especializada</strong></span
-                  >
-                  para <span class="keyword"><strong>smartphones</strong></span
-                  >. Nosso compromisso com o
-                  <span class="keyword"
-                    ><strong>melhor atendimento</strong></span
-                  >,
-                  <span class="keyword"><strong>transparência</strong></span> e
-                  <span class="keyword"><strong>qualidade</strong></span>
-                  garante uma experiência de compra <em>satisfatória</em> e
-                  <em>confiável</em> para todos os nossos clientes. Venha nos
-                  visitar e descubra a diferença que faz ter um
-                  <span class="keyword"
-                    ><strong>parceiro tecnológico de confiança</strong></span
-                  >
-                  ao seu lado.
-                </p>
-                <h3 class="section-title">Sobre a <span>Assistência</span></h3>
-                <p class="section-content">
-                  Na <b>GOLDCELL</b>, oferecemos serviços de
-                  <span class="keyword"
-                    ><strong>assistência técnica especializada</strong></span
-                  >
-                  para todos os tipos de
-                  <span class="keyword"><strong>smartphones</strong></span
-                  >. Nossa equipe de
-                  <span class="keyword"
-                    ><strong>técnicos qualificados</strong></span
-                  >
-                  está pronta para lidar com uma ampla gama de problemas, desde
-                  <span class="keyword"><strong>trocas de tela</strong></span> e
-                  <span class="keyword"
-                    ><strong>reparos de bateria</strong></span
-                  >
-                  até soluções para problemas mais complexos de
-                  <span class="keyword"><strong>hardware</strong></span> e
-                  <span class="keyword"><strong>software</strong></span
-                  >. Utilizamos apenas
-                  <span class="keyword"
-                    ><strong>peças de alta qualidade</strong></span
-                  >
-                  para garantir que seu dispositivo funcione perfeitamente após
-                  o reparo. Nosso compromisso é fornecer um serviço
-                  <span class="keyword"><em>rápido</em></span
-                  >, <span class="keyword"><em>eficiente</em></span> e
-                  <span class="keyword"><em>transparente</em></span
-                  >, garantindo a total satisfação dos nossos clientes. Confie
-                  seu smartphone à <b>GOLDCELL</b> e experimente a diferença!
-                </p>
-                <ul class="container d-flex justify-content-center">
-                  <li>
-                    <a
-                      href="https://www.instagram.com/goldcell_itaocara/"
-                      target="_blank"
-                      ><i class="bi bi-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/p/Gold-Cell-100069844410237/?locale=pt_BR"
-                      target="_blank"
-                      ><i class="bi bi-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://wa.me/+5522988727005" target="_blank"
-                      ><i class="bi bi-whatsapp"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="services" class="pt-5 pb-5">
-        <div class="container">
-          <div class="row">
-            <h2 class="section-title text-center">
-              <span><i class="bi bi-search"></i></span> Nossos
-              <span>Produtos</span>
-            </h2>
-          </div>
-          <div class="row pt-5">
-            <div class="col-md-4">
-              <div class="card scroll-on-hover">
-                <div class="card-body">
-                  <h5 class="card-title section-title">
-                    Confira Nossa <span>tabela de preços</span> por marcas
-                  </h5>
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <th scope="row">Apple <i class="bi bi-apple"></i></th>
-                        <td>
-                          <p>
-                            <a href="https://www.google.com">Telas apple</a>
-                          </p>
-                        </td>
-                        <td>
-                          <a href="https://www.google.com"
-                            ><i class="bi bi-bag"></i
-                          ></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Samsung</th>
-                        <td>
-                          <p>
-                            <a href="https://www.google.com">Telas Samsung</a>
-                          </p>
-                        </td>
-                        <td>
-                          <a href="https://www.google.com"
-                            ><i class="bi bi-bag"></i
-                          ></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Motorola</th>
-                        <td>
-                          <p>
-                            <a href="https://www.google.com">Telas Motorola</a>
-                          </p>
-                        </td>
-                        <td>
-                          <a href="https://www.google.com"
-                            ><i class="bi bi-bag"></i
-                          ></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">LG</th>
-                        <td>
-                          <p><a href="https://www.google.com">Telas LG</a></p>
-                        </td>
-                        <td>
-                          <a href="https://www.google.com"
-                            ><i class="bi bi-bag"></i
-                          ></a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title section-title">
-                    Aparelhos
-                    <span class="keyword"
-                      >mais vendidos <i class="bi bi-fire"></i
-                    ></span>
-                  </h5>
-                  <div
-                    id="productCarousel"
-                    class="carousel slide"
-                    data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="5000">
-                        <img
-                          id="product-img"
-                          src="./media/pngwing.com.png"
-                          alt="Note 13 Pro" />
-                        <h6 id="product-name-info" class="card-title">
-                          Smartphone Xiaomi Redmi Note 13 Pro 5G 8GB+256GB
-                          Snapdragon 7s Gen 2, Câmera 200MP OIS, Carregamento
-                          Turbo 67W, 120Hz, AMOLED, NFC...
-                        </h6>
-                        <a href="#" class="btn">Confira já!</a>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="5000">
-                        <img
-                          id="product-img"
-                          src="./media/-950092354.jpg"
-                          alt="S3 Ultra" />
-                        <h6 id="product-name-info" class="card-title">
-                          Samsung Galaxy S23 Ultra 5G 512GB Tela 6.8'' 12GB RAM
-                          IP68 Processador Qualcomm Snapdragon 8 Gen 2 Câmera
-                          Quádrupla de até 200MP + Selfie 12MP - Preto
-                        </h6>
-                        <a href="#" class="btn">Confira já!</a>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="5000">
-                        <img
-                          id="product-img"
-                          src="./media/303572_tsb3ow.webp"
-                          alt="Note 13 Pro" />
-                        <h6 id="product-name-info" class="card-title">
-                          Samsung Galaxy S23 Ultra 5G 512GB Tela 6.8'' 12GB RAM
-                          IP68 Processador Qualcomm Snapdragon 8 Gen 2 Câmera
-                          Quádrupla de até 200MP + Selfie 12MP - Preto
-                        </h6>
-                        <a href="#" class="btn">Confira já!</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title section-title">
-                    <span> <i class="bi bi-person"></i> </span>Área do
-                    <span>cliente</span>
-                  </h5>
-                  <div class="row g2">
-                    <div class="col-md">
-                      <div class="form-floating mb-3">
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email-input"
-                          placeholder="Insira seu email" />
-                        <label for="email-input">Email:</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="password"
-                          placeholder="Insira sua senha" />
-                        <label for="password">Senha:</label>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="btn">Login</a>
-                  <a href="#" class="btn">Cadastre-se</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="products">
-        <div class="container">
-          <div class="row">
-            <h2 class="section-title text-center">
-              <span><i class="bi bi-phone-fill"></i></span> Nossos
-              <span>Celulares</span>
-            </h2>
-          </div>
-          <div class="row">
-            <aside class="col-md-2">
-              <div class="nav nav-pills flex-column nav-menu">
-                <button type="button" class="btn-menu nav-link active">
-                  Celulares Novos
-                </button>
-                <button type="button" class="btn-menu nav-link">
-                  Celulares Semi-Novos
-                </button>
-                <button type="button" class="btn-menu nav-link">
-                  Acessórios
-                </button>
-                <button type="button" class="btn-menu nav-link">
-                  Aparelhos Disponíveis por encomenda
-                </button>
-              </div>
-            </aside>
-            <div class="col-md-10">
-              <div class="tab-content">
-                <div class="tab-pane active">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="/media/Produtos/Note 13.png"
-                          alt="Card image cap"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Note 13</h4>
-                          <p class="card-text">Text</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="/media/Produtos/Note 13 Pro.png"
-                          alt="Card image cap"
-                        />
-                        <div class="card-body">
-                          <a href="#" id="card-title-product"><h4 class="card-title">Title</h4></a>
-                          <p class="card-text">Text</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="/media/Produtos/Redmi 13C.png"
-                          alt="Card image cap"
-                        />
-                        <div class="card-body">
-                          <a href="#" id="card-title-product"><h4 class="card-title">Title</h4></a>
-                          <p class="card-text">Text</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="/media/Produtos/S24.png"
-                          alt="Card image cap"
-                        />
-                        <div class="card-body">
-                          <a href="#" id="card-title-product"><h4 class="card-title">Title</h4></a>
-                          <p class="card-text">Text</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="/media/Produtos/S24 plus.png"
-                          alt="Card image cap"
-                        />
-                        <div class="card-body">
-                          <a href="#" id="card-title-product"><h4 class="card-title">Title</h4></a>
-                          <p class="card-text">Text</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="/media/Produtos/S24 Ultra.png"
-                          alt="Card image cap"
-                        />
-                        <div class="card-body">
-                          <a href="#" id="card-title-product"><h4 class="card-title">Title</h4></a>
-                          <p class="card-text">Text</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="/media/Produtos/Iphone 15.png"
-                          alt="Card image cap"
-                        />
-                        <div class="card-body">
-                          <a href="#" id="card-title-product"><h4 class="card-title">Title</h4></a>
-                          <p class="card-text">Text</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="/media/Produtos/Iphone 15 pro.png"
-                          alt="Card image cap"
-                        />
-                        <div class="card-body">
-                          <a href="#" id="card-title-product"><h4 class="card-title">Title</h4></a>
-                          <p class="card-text">Text</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./main.css" />
+  <title>Goldcell Itaocara</title>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+    <div class="container">
+      <h1 class="navbar navbar-brand m-0 section-title">Goldcell</h1>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="menu-navigation">
+        <ul class="nav nav-pills d-block d-md-flex">
+          <li id="" class="nav-item">
+            <a href="#about-store" id="toggleLink" class="nav-link">
+              <i class="bi bi-house-fill me-1"></i>
+              Nossa Loja
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#products" class="nav-link">
+              <i class="bi bi-phone-fill me-1"></i>
+              Celulares Mais Vendidos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-screwdriver me-1"></i>
+              Assistência Técnica
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-chat-fill me-1"></i>
+              Fale Conosco
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </header>
+  <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <section id="about-store">
+      <div class="carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div id="carousel-bg" class="carousel-item active" data-bs-interval="5000">
+            <video src="./media/Introducing iPhone 15 WOW Apple.mp4" style="object-fit: cover; height: 100%" autoplay
+              muted loop></video>
+            <div class="carousel-caption">
+              <h1>Goldcell</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Porro dicta cumque ullam iste laudantium voluptate amet
+                obcaecati nostrum molestias natus aut asperiores
+                reprehenderit, neque aliquid, aspernatur magni veniam alias
+                qui.
+              </p>
+            </div>
+          </div>
+          <div id="carousel-bg" class="carousel-item" data-bs-interval="5000">
+            <video src="./media/Meet Xiaomi 14 Lens to legend.mp4" autoplay muted loop></video>
+            <div class="carousel-caption">
+              <div class="carousel-caption">
+                <h2>Goldcell</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="toggleSelection" class="hidden pt-5 pb-5 section-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="./media/loja.jpg" class="dblock w-100 rounded" alt="interior da loja goldcell" />
+            </div>
+            <div class="col-md-7">
+              <h2 class="section-title">Sobre nossa <span>Loja</span></h2>
+              <p class="section-content">
+                Bem-vindo à <b>GOLDCELL</b>, sua loja de referência em
+                <span class="keyword"><strong>celulares</strong></span>,
+                <span class="keyword"><strong>acessórios para celulares</strong></span>
+                e <span class="keyword"><strong>eletrônicos</strong></span> em
+                <em>Itaocara</em>. Desde junho de 2021, temos nos dedicado a
+                oferecer produtos de
+                <span class="keyword"><strong>alta qualidade</strong></span> e
+                serviços de
+                <span class="keyword"><strong>assistência técnica especializada</strong></span>
+                para <span class="keyword"><strong>smartphones</strong></span>. Nosso compromisso com o
+                <span class="keyword"><strong>melhor atendimento</strong></span>,
+                <span class="keyword"><strong>transparência</strong></span> e
+                <span class="keyword"><strong>qualidade</strong></span>
+                garante uma experiência de compra <em>satisfatória</em> e
+                <em>confiável</em> para todos os nossos clientes. Venha nos
+                visitar e descubra a diferença que faz ter um
+                <span class="keyword"><strong>parceiro tecnológico de confiança</strong></span>
+                ao seu lado.
+              </p>
+              <h3 class="section-title">Sobre a <span>Assistência</span></h3>
+              <p class="section-content">
+                Na <b>GOLDCELL</b>, oferecemos serviços de
+                <span class="keyword"><strong>assistência técnica especializada</strong></span>
+                para todos os tipos de
+                <span class="keyword"><strong>smartphones</strong></span>. Nossa equipe de
+                <span class="keyword"><strong>técnicos qualificados</strong></span>
+                está pronta para lidar com uma ampla gama de problemas, desde
+                <span class="keyword"><strong>trocas de tela</strong></span> e
+                <span class="keyword"><strong>reparos de bateria</strong></span>
+                até soluções para problemas mais complexos de
+                <span class="keyword"><strong>hardware</strong></span> e
+                <span class="keyword"><strong>software</strong></span>. Utilizamos apenas
+                <span class="keyword"><strong>peças de alta qualidade</strong></span>
+                para garantir que seu dispositivo funcione perfeitamente após
+                o reparo. Nosso compromisso é fornecer um serviço
+                <span class="keyword"><em>rápido</em></span>, <span class="keyword"><em>eficiente</em></span> e
+                <span class="keyword"><em>transparente</em></span>, garantindo a total satisfação dos nossos clientes.
+                Confie
+                seu smartphone à <b>GOLDCELL</b> e experimente a diferença!
+              </p>
+              <ul class="container d-flex justify-content-center">
+                <li>
+                  <a href="https://www.instagram.com/goldcell_itaocara/" target="_blank"><i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/p/Gold-Cell-100069844410237/?locale=pt_BR" target="_blank"><i
+                      class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/+5522988727005" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center">
+            <span><i class="bi bi-search"></i></span> Nossos
+            <span>Produtos</span>
+          </h2>
+        </div>
+        <div class="row pt-5">
+          <div class="col-md-4">
+            <div class="card scroll-on-hover">
+              <div class="card-body">
+                <h5 class="card-title section-title">
+                  Confira Nossa <span>tabela de preços</span> por marcas
+                </h5>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Apple <i class="bi bi-apple"></i></th>
+                      <td>
+                        <p>
+                          <a href="https://www.google.com">Telas apple</a>
+                        </p>
+                      </td>
+                      <td>
+                        <a href="https://www.google.com"><i class="bi bi-bag"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Samsung</th>
+                      <td>
+                        <p>
+                          <a href="https://www.google.com">Telas Samsung</a>
+                        </p>
+                      </td>
+                      <td>
+                        <a href="https://www.google.com"><i class="bi bi-bag"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Motorola</th>
+                      <td>
+                        <p>
+                          <a href="https://www.google.com">Telas Motorola</a>
+                        </p>
+                      </td>
+                      <td>
+                        <a href="https://www.google.com"><i class="bi bi-bag"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">LG</th>
+                      <td>
+                        <p><a href="https://www.google.com">Telas LG</a></p>
+                      </td>
+                      <td>
+                        <a href="https://www.google.com"><i class="bi bi-bag"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title section-title">
+                  Aparelhos
+                  <span class="keyword">mais vendidos <i class="bi bi-fire"></i></span>
+                </h5>
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                      <img id="product-img" src="./media/pngwing.com.png" alt="Note 13 Pro" />
+                      <h6 id="product-name-info" class="card-title">
+                        Smartphone Xiaomi Redmi Note 13 Pro 5G 8GB+256GB
+                        Snapdragon 7s Gen 2
+                      </h6>
+                      <a href="#" class="btn stretched-link">Confira já!</a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                      <img id="product-img" src="./media/-950092354.jpg" alt="S3 Ultra" />
+                      <h6 id="product-name-info" class="card-title">
+                        Samsung Galaxy S23 Ultra 5G 512GB Tela 6.8'' 12GB RAM
+                        Processador Qualcomm Snapdragon 8 Gen 2
+                      </h6>
+                      <a href="#" class="btn stretched-link">Confira já!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title section-title">
+                  <span> <i class="bi bi-person"></i> </span>Área do
+                  <span>cliente</span>
+                </h5>
+                <div class="row g2">
+                  <div class="col-md">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="email-input" placeholder="Insira seu email" />
+                      <label for="email-input">Email:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="password" placeholder="Insira sua senha" />
+                      <label for="password">Senha:</label>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn">Login</a>
+                <a href="#" class="btn">Cadastre-se</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center">
+            <span><i class="bi bi-phone-fill"></i></span> Nossos
+            <span>Celulares</span>
+          </h2>
+        </div>
+        <div class="row">
+          <aside class="col-md-2">
+            <div class="nav nav-pills flex-column nav-menu">
+              <button type="button" class="btn-menu nav-link active">
+                Celulares Novos
+              </button>
+              <button type="button" class="btn-menu nav-link">
+                Celulares Semi-Novos
+              </button>
+              <button type="button" class="btn-menu nav-link">
+                Acessórios
+              </button>
+              <button type="button" class="btn-menu nav-link">
+                Aparelhos Disponíveis por encomenda
+              </button>
+            </div>
+          </aside>
+          <div class="col-md-10">
+            <div class="tab-content">
+              <div class="tab-pane active">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card" id="card-product">
+                      <img class="card-img-top" src="/media/Produtos/Note 13.png" alt="Card image cap" />
+                      <div class="card-body">
+                        <h4 class="card-title">Note 13</h4>
+                        <p class="card-text">Smartphone com tela de 6.5 polegadas, processador octa-core e câmera de 48
+                          MP.</p>
+                        <a href="#" class="card-link stretched-link">Card link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" id="card-product">
+                      <img class="card-img-top" src="/media/Produtos/Note 13 Pro.png" alt="Card image cap" />
+                      <div class="card-body">
+                        <a href="#" id="card-title-product">
+                          <h4 class="card-title">Note 13 PRO</h4>
+                        </a>
+                        <p class="card-text">Versão avançada do Note 13, com tela de 6.7 polegadas e câmera de 64 MP.
+                        </p>
+                        <a href="#" class="card-link stretched-link">Card link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" id="card-product">
+                      <img class="card-img-top" src="/media/Produtos/Redmi 13C.png" alt="Card image cap" />
+                      <div class="card-body">
+                        <a href="#" id="card-title-product">
+                          <h4 class="card-title">Redmi 13C</h4>
+                        </a>
+                        <p class="card-text">Celular econômico com tela de 6.3 polegadas e bateria de longa duração.</p>
+                        <a href="#" class="card-link stretched-link">Card link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" id="card-product">
+                      <img class="card-img-top" src="/media/Produtos/S24.png" alt="Card image cap" />
+                      <div class="card-body">
+                        <a href="#" id="card-title-product">
+                          <h4 class="card-title">Samsung S24</h4>
+                        </a>
+                        <p class="card-text">Novo modelo da série S com tela AMOLED de 6.8 polegadas e câmera tripla de
+                          108 MP.</p>
+                        <a href="#" class="card-link stretched-link">Card link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" id="card-product">
+                      <img class="card-img-top" src="/media/Produtos/S24 plus.png" alt="Card image cap" />
+                      <div class="card-body">
+                        <a href="#" id="card-title-product">
+                          <h4 class="card-title">Samsung S24 Plus</h4>
+                        </a>
+                        <p class="card-text">Versão Plus com tela maior de 6.9 polegadas e bateria de alta capacidade.
+                        </p>
+                        <a href="#" class="card-link stretched-link">Card link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" id="card-product">
+                      <img class="card-img-top" src="/media/Produtos/S24 Ultra.png" alt="Card image cap" />
+                      <div class="card-body">
+                        <a href="#" id="card-title-product">
+                          <h4 class="card-title">S24 Ultra</h4>
+                        </a>
+                        <p class="card-text">Modelo Ultra com câmera de 200 MP, S Pen integrada e display Dynamic
+                          AMOLED.</p>
+                        <a href="#" class="card-link stretched-link">Card link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" id="card-product">
+                      <img class="card-img-top" src="/media/Produtos/Iphone 15.png" alt="Card image cap" />
+                      <div class="card-body">
+                        <a href="#" id="card-title-product">
+                          <h4 class="card-title">Iphone 15</h4>
+                        </a>
+                        <p class="card-text">Nova geração do iPhone com chip A16 Bionic e câmera de 48 MP.</p>
+                        <a href="#" class="card-link stretched-link">Card link</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card" id="card-product">
+                      <img class="card-img-top" src="/media/Produtos/Iphone 15 pro.png" alt="Card image cap" />
+                      <div class="card-body">
+                        <a href="#" id="card-title-product">
+                          <h4 class="card-title">Iphone 15 Pro</h4>
+                        </a>
+                        <p class="card-text">Versão Pro com tela de 6.1 polegadas e câmera de 48 MP com LiDAR Scanner.
+                        </p>
+                        <a href="#" class="card-link stretched-link">Card link</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./main.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
 </html>

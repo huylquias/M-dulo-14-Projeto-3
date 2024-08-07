@@ -172,16 +172,6 @@ ul li a i {
   border-style: solid;
 }
 
-.card {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  overflow-y: hidden;
-}
-
 .scroll-on-hover:hover {
   overflow-y: auto;
 }
@@ -395,7 +385,8 @@ ul li a i {
   text-align: center;
   overflow-y: hidden;
   margin: 10px;
-  border-radius: 10px
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .scroll-on-hover:hover {
@@ -404,24 +395,37 @@ ul li a i {
 
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .card-img-top {
   padding-top: 10px;
-  width: 15vh; 
-  height: 20vh; 
-  object-fit: scale-down; 
+  width: 15vh;
+  height: 20vh;
+  object-fit: scale-down;
 }
 
-#card-title-product { 
-  text-decoration: none; 
-  color: inherit; 
+#card-title-product {
+  text-decoration: none;
+  color: inherit;
 }
-
 
 #product-img {
   max-width: 30%;
+}
+
+#card-product {
+  padding-bottom: 350px;
+}
+
+.card-text {
+  max-height: 100px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.card-link { 
+  display: block;
 }
 
 #price {
@@ -431,4 +435,5 @@ ul li a i {
 
 #product-name-info {
   font-style: italic;
+  object-fit: cover;
 }
