@@ -16,3 +16,4 @@ document
       section.classList.add("hidden");
     }
   });
+

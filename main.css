@@ -238,15 +238,43 @@ ul li a i {
   padding-bottom: 350px;
 }
 
-.card-text {
+.card-text { 
   max-height: 100px;
-  overflow-y: hidden;
-  margin-bottom: 10px;
+  overflow: hidden;
 }
 
-#price {
+.card-text:hover {
+  overflow: -moz-hidden-unscrollable;
+  position: relative;
+  max-height: 100px;
+  -moz-transform: translate(100%);
+  -webkit-transform: translate(100%);
+  transform: translate(100%);
+  -moz-animation: ScrollText 10s linear infinite;
+  -webkit-animation: ScrollText 10s linear infinite;
+  animation: ScrollText 10s linear infinite;
+  
+}
+
+@keyframes ScrollText{
+  from {
+    -webkit-transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+.card-body {
+  position: relative;
+  height: 80px;
+}
+
+.price {
   align-items: first baseline;
-  font-style: italic;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  overflow: hidden;
 }
 
 #product-name-info {
