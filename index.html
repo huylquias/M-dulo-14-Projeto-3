@@ -79,12 +79,8 @@
               ></video>
               <div class="carousel-caption">
                 <h1>Goldcell</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Porro dicta cumque ullam iste laudantium voluptate amet
-                  obcaecati nostrum molestias natus aut asperiores
-                  reprehenderit, neque aliquid, aspernatur magni veniam alias
-                  qui.
+                <p class="opacity-25 text-center">
+                  Aqui temos a solução dos seus problemas. 
                 </p>
               </div>
             </div>
@@ -95,11 +91,12 @@
                 muted
                 loop
               ></video>
-              <div class="carousel-caption">
                 <div class="carousel-caption">
-                  <h2>Goldcell</h2>
+                  <h1>Goldcell</h1>
+                  <p class="opacity-25 text-center">
+                    Aqui temos a solução dos seus problemas. 
+                  </p>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -113,6 +110,7 @@
                   alt="interior da loja goldcell"
                 />
               </div>
+              <!--Sobre a loja (Aparece ao clicar)  -->
               <div class="col-md-7">
                 <h2 class="section-title">Sobre nossa <span>Loja</span></h2>
                 <p class="section-content">
@@ -213,6 +211,7 @@
           </div>
           <div class="row pt-5">
             <div class="col-md-4">
+              <!-- Tabela de preços de tela  -->
               <div class="card scroll-on-hover">
                 <div class="card-body">
                   <h5 class="card-title section-title">
@@ -276,6 +275,7 @@
               </div>
             </div>
             <div class="col-md-4">
+              <!-- Aparelhos Mais Vendidos -->
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title section-title">
@@ -319,6 +319,7 @@
                 </div>
               </div>
             </div>
+            <!-- Área de Login do Cliente -->
             <div class="col-md-4">
               <div class="card">
                 <div class="card-body">
@@ -364,27 +365,29 @@
               <span>Celulares</span>
             </h2>
           </div>
+          <!-- Menu Lateral -->
           <div class="row">
             <aside class="col-md-2">
               <div class="nav nav-pills flex-column nav-menu">
-                <button type="button" class="btn-menu nav-link active">
+                <button data-bs-toggle="tab" data-bs-target="#NewCellPhones" type="button" class="btn-menu nav-link active">
                   Celulares Novos
                 </button>
-                <button type="button" class="btn-menu nav-link">
+                <button data-bs-toggle="tab" data-bs-target="#SemiNewCellPhones" type="button" class="btn-menu nav-link">
                   Celulares Semi-Novos
                 </button>
-                <button type="button" class="btn-menu nav-link">
+                <button data-bs-toggle="tab" data-bs-target="" type="button" class="btn-menu nav-link">
                   Acessórios
                 </button>
-                <button type="button" class="btn-menu nav-link">
+                <button data-bs-toggle="tab" data-bs-target="" type="button" class="btn-menu nav-link">
                   Aparelhos Disponíveis por encomenda
                 </button>
               </div>
             </aside>
             <div class="col-md-10">
               <div class="tab-content">
-                <div class="tab-pane active">
-                  <h6 class="text-center opacity-25">toque na descrição para verificar o resumo completo</h6>
+                <!-- Aparelhos Novos -->
+                <div id="NewCellPhones" class="tab-pane active">
+                  <h6 class="text-center opacity-25">Passe o cursor <i class="bi bi-cursor"></i></i> ou toque <i class="bi bi-hand-index"></i> na descrição para visualizar o resumo completo com rolagem automática.</h6>
                   <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-3">
                       <div class="card" id="card-product">
@@ -411,7 +414,7 @@
                               condição de iluminação. Sua bateria de longa
                               duração garante que você possa usar o dispositivo
                               o dia todo sem precisar recarregar. Seja para
-                              trabalho ou lazer, o Note 13 é a escolha perfeita
+                              trabalho ou lazer, o Note 13  é a escolha perfeita
                               para quem precisa de um smartphone acessível e
                               confiável.
                             </p>
@@ -513,20 +516,10 @@
                             ></a>
                           </div>
                           <div class="text-container">
-                            <p class="card-text">
-                              O Redmi 13C é a opção ideal para quem procura um
-                              smartphone econômico, mas com recursos de
-                              qualidade. Com uma tela de 6.3 polegadas, oferece
-                              um display claro e confortável para todas as suas
-                              atividades diárias. A bateria de longa duração
-                              assegura que você possa usar o telefone o dia
-                              inteiro, seja para chamadas, mensagens ou
-                              navegação na web. Seu design moderno e eficiente
-                              proporciona uma experiência de usuário agradável e
-                              prática, tornando o Redmi 13C uma excelente
-                              escolha para quem precisa de um dispositivo
-                              confiável sem gastar muito.
-                            </p>
+                            
+                              <p class="card-text">
+                                O Samsung S24 eleva a experiência móvel a um novo patamar com sua impressionante tela Dynamic AMOLED de 6.7 polegadas, oferecendo cores vibrantes e nitidez incomparável. Equipado com um poderoso processador Exynos 2400, ele garante desempenho excepcional, seja em tarefas diárias ou em jogos exigentes. A câmera traseira de 108 MP captura fotos e vídeos com detalhes incríveis, mesmo em condições de pouca luz, enquanto a bateria de 5000 mAh, com carregamento ultrarrápido, assegura que você fique conectado por mais tempo. Com design elegante e recursos inovadores, o Samsung S24 é a escolha ideal para quem busca um smartphone premium e sofisticado.
+                              </p>
                             <div class="price">
                               <p>R$2.0000</p>
                             </div>
@@ -679,6 +672,37 @@
 
                             <div class="price">
                               <p>R$2.0000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Aparelhos Usados -->
+                <div class="tab-pane" id="SemiNewCellPhones">
+                  <h6 class="text-center opacity-25">Passe o cursor <i class="bi bi-cursor"></i></i> ou toque <i class="bi bi-hand-index"></i> na descrição para visualizar o resumo completo com rolagem automática.</h6>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <div class="card" id="card-product">
+                        <img
+                          class="card-img-top"
+                          src="/media/Produtos/x3 pro Usado.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="card-body">
+                          <a href="#" id="card-title-product">
+                            <h4 class="card-title">X3 Pro 128gb</h4>
+                          </a>
+                          <a href="#" class="stretched-link"
+                            ><i class="bi bi-bag"></i
+                          ></a>
+                          <div class="text-container">
+                            <p class="card-text">
+                              O X3 Pro 128GB usado é uma excelente opção para quem procura desempenho robusto a um preço acessível. Este dispositivo passou por uma troca de tela realizada recentemente, garantindo uma visualização impecável em sua tela de 6.67 polegadas, como se fosse novo. Com seu processador Snapdragon 860, ele oferece fluidez em jogos e multitarefas, enquanto os 128GB de armazenamento proporcionam amplo espaço para seus aplicativos, fotos e vídeos. Embora seja um aparelho usado, ele mantém todas as suas funcionalidades originais, tornando-se uma escolha inteligente para quem busca um smartphone poderoso e confiável.
+                            </p>
+                            <div class="price">
+                              <p>R$800</p>
                             </div>
                           </div>
                         </div>

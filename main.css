@@ -91,6 +91,10 @@ body {
   color: #ffffff;
 }
 
+.hidden { 
+  display: none;
+}
+
 /* TITLES AND CONTENTS  */
 .section-title {
   font-family: "Noto Sans JP", sans-serif;
@@ -241,13 +245,13 @@ ul li a i {
 
 #legenda { 
   opacity: 10%;
-  align-items
-}
+}  
 
 #card-title-product {
   text-decoration: none;
   color: inherit;
 }
+
 
 #card-product {
   padding-bottom: 350px;
@@ -255,20 +259,6 @@ ul li a i {
 
 .text-container { 
   overflow: hidden;
-}
-
-.text-container > .card-text { 
-  position: relative;
-}
-
-.text-container > .card-text::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.24) 5%, rgba(255, 255, 255, 1) 100%);
 }
 
 .card-text { 
@@ -306,4 +296,5 @@ ul li a i {
   font-weight: 700;
   font-family: "Noto Sans JP", sans-serif;
   color: #000;
+  
 }
