@@ -254,10 +254,12 @@ ul li a i {
 }
 
 .card-text { 
-  max-height: 100px;
-  max-width: 100vh  ;
+  max-height: 50px;
+  width: fit-content;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  text-align: center;
   overflow: hidden;
-  justify-content: center;
 }
 
 .card-text:hover {
@@ -278,7 +280,6 @@ ul li a i {
     -webkit-transform: translateY(-100%);
   }
 }
-
 .card-body {
   position: relative;
   min-height: 80px;
