@@ -239,6 +239,11 @@ ul li a i {
 
 /* TEXTO DO CARD */
 
+#legenda { 
+  opacity: 10%;
+  align-items
+}
+
 #card-title-product {
   text-decoration: none;
   color: inherit;
@@ -249,8 +254,21 @@ ul li a i {
 }
 
 .text-container { 
-  position: absolute;
   overflow: hidden;
+}
+
+.text-container > .card-text { 
+  position: relative;
+}
+
+.text-container > .card-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.24) 5%, rgba(255, 255, 255, 1) 100%);
 }
 
 .card-text { 
