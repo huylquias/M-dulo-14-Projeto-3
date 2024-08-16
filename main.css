@@ -265,10 +265,9 @@ ul li a i {
 }
 
 .card-text { 
-  max-height: 100px;
-  max-width: 100vh  ;
+  max-height: 50px;
+  width: fit-content;
   overflow: hidden;
-  justify-content: center;
 }
 
 .card-text:hover {
@@ -289,7 +288,6 @@ ul li a i {
     -webkit-transform: translateY(-100%);
   }
 }
-
 .card-body {
   position: relative;
   min-height: 100px;
