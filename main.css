@@ -91,10 +91,6 @@ body {
   color: #ffffff;
 }
 
-.hidden { 
-  display: none;
-}
-
 /* TITLES AND CONTENTS  */
 .section-title {
   font-family: "Noto Sans JP", sans-serif;
@@ -205,7 +201,7 @@ ul li a i {
 
 /* CARDS MALDITOS */
 .card {
-  height: 300px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -243,9 +239,6 @@ ul li a i {
 
 /* TEXTO DO CARD */
 
-#legenda { 
-  opacity: 10%;
-}  
 
 #card-title-product {
   text-decoration: none;
@@ -253,12 +246,22 @@ ul li a i {
 }
 
 
-#card-product {
-  padding-bottom: 350px;
-}
-
 .text-container { 
   overflow: hidden;
+}
+
+.text-container > .card-text { 
+  position: relative;
+}
+
+.text-container > .card-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.24) 5%, rgba(255, 255, 255, 1) 100%);
 }
 
 .card-text { 
@@ -289,12 +292,11 @@ ul li a i {
 
 .card-body {
   position: relative;
-  min-height: 80px;
+  min-height: 100px;
 }
 
 .price {
   font-weight: 700;
   font-family: "Noto Sans JP", sans-serif;
   color: #000;
-  
 }
