@@ -1,6 +1,6 @@
 /* HTML */
 body {
-  font-family: "Teachers", sans-serif;
+  font-family: 'Teachers', sans-serif;
 }
 
 /* NAVBAR */
@@ -17,18 +17,18 @@ body {
 .navbar-brand,
 .navbar-brand:hover {
   color: white;
-  font-family: "Teachers", sans-serif;
+  font-family: 'Teachers', sans-serif;
   font-weight: 500;
 }
 
 #cabecalho .navbar-brand {
   font-size: 42px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #efbf04;
 }
 
 #cabecalho .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBzdHJva2U9IiNFRkJGMDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xIDIuNWgxNE0xIDhoMTRNMSAxMy41aDE0Ij48L3BhdGg+PC9zdmc+Cg==");
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBzdHJva2U9IiNFRkJGMDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xIDIuNWgxNE0xIDhoMTRNMSAxMy41aDE0Ij48L3BhdGg+PC9zdmc+Cg==');
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -83,7 +83,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #efbf04;
 }
 
@@ -91,19 +91,24 @@ body {
   color: #ffffff;
 }
 
-/* TITLES AND CONTENTS  */
-.section-title {
-  font-family: "Noto Sans JP", sans-serif;
+.hidden {
+  display: none;
 }
 
-.section-title > span {
+/* TITLES AND CONTENTS  */
+.section-title {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.section-title > span,
+.contact-text {
   color: #ffcc00;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 0 0 5px #161616;
 }
 
 .section-content {
-  font-family: "Teachers", sans-serif;
+  font-family: 'Teachers', sans-serif;
 }
 
 .section-content > span {
@@ -143,7 +148,7 @@ ul li a i {
 .btn {
   cursor: pointer;
   border: 0px solid #ffcc00;
-  font-family: "Teachers", sans-serif;
+  font-family: 'Teachers', sans-serif;
   font-size: 15px;
   color: rgb(0, 0, 0);
   padding: 10px 30px;
@@ -177,7 +182,7 @@ ul li a i {
 }
 
 .btn-menu {
-  font-family: "Teachers", sans-serif;
+  font-family: 'Teachers', sans-serif;
   text-decoration: none;
   margin-top: 5px;
   color: #ffcc00;
@@ -200,8 +205,9 @@ ul li a i {
 }
 
 /* CARDS MALDITOS */
-.card {
 
+.card {
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -214,59 +220,54 @@ ul li a i {
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 0 4px 18px #00000042;
+  border-radius: 15px;
 }
 
 .card-img-top {
-  padding-top: 10px;
+  padding-top: 15px;
   width: 15vh;
   height: 20vh;
   object-fit: scale-down;
 }
 
-.card-link { 
-  display: flex;           
+.card-link {
+  display: flex;
   justify-content: center;
-  align-items: center;    
-  text-align: center; 
+  align-items: center;
+  text-align: center;
 }
 
-#product-img {  /* Imagem do card *MAIS VENDIDOS* */
+#product-img {
+  /* Imagem do card *MAIS VENDIDOS* */
   max-width: 40%;
-} 
+}
 
+.card-img-top-used {
+  max-width: 50%;
+  object-fit: scale-down;
+  margin-top: 10px;
+}
 
 /* TEXTO DO CARD */
-
 
 #card-title-product {
   text-decoration: none;
   color: inherit;
 }
 
-
-.text-container { 
-  overflow: hidden;
+#card-product {
+  padding-bottom: 350px;
 }
 
-.text-container > .card-text { 
+.text-container {
+  overflow: hidden;
   position: relative;
 }
 
-.text-container > .card-text::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.24) 5%, rgba(255, 255, 255, 1) 100%);
-}
-
-.card-text { 
-  max-height: 50px;
-  width: fit-content;
+.card-text {
+  max-height: 100px;
+  max-width: 100vh;
   overflow: hidden;
 }
 
@@ -274,13 +275,13 @@ ul li a i {
   min-height: 200vh;
   -moz-transform: none;
   -webkit-transform: none;
-  transform: none; 
-  -moz-animation: ScrollText 30s linear infinite;
-  -webkit-animation: ScrollText 30s linear infinite;
-  animation: ScrollText 30s linear infinite; 
+  transform: none;
+  -moz-animation: ScrollText 80s linear infinite;
+  -webkit-animation: ScrollText 80s linear infinite;
+  animation: ScrollText 80s linear infinite;
 }
 
-@keyframes ScrollText{
+@keyframes ScrollText {
   from {
     -webkit-transform: translateY(0%);
   }
@@ -288,13 +289,54 @@ ul li a i {
     -webkit-transform: translateY(-100%);
   }
 }
+
 .card-body {
   position: relative;
-  min-height: 100px;
+  min-height: 80px;
 }
 
 .price {
+  padding-top: 15px;
   font-weight: 700;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #000;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Technical */
+
+form > div { 
+  padding-bottom: 10px;
+}
+
+.contact-text {
+  padding-top: 10px;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-top: 1px solid #dee2e6;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-brands {
+  display: flex;
+  align-items: center;
+}
+.card-brands img {
+  width: 50px;
+  margin: 0 10px;
+}
+.card-reclame img {
+  width: 100px;
+}
+.footer div {
+  margin: 0 10px;
+}
+.footer small {
+  text-align: center;
+  margin: 0px 0;
 }

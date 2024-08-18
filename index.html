@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <!-- Navbar -->
     <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
       <div class="container">
         <h1 class="navbar navbar-brand m-0 section-title">Goldcell</h1>
@@ -48,7 +49,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#technical-assistance" class="nav-link">
                 <i class="bi bi-screwdriver me-1"></i> Assistência Técnica
               </a>
             </li>
@@ -61,7 +62,9 @@
         </nav>
       </div>
     </header>
+    <!-- Verificar essa DIV novamente -->
     <div data-bs-spy="scroll" data-bs-target="cabecalho">
+      <!-- Fundo de vídeo inicio da página -->
       <section id="about-store">
         <div class="carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -71,7 +74,7 @@
               data-bs-interval="5000"
             >
               <video
-                src="./media/Introducing iPhone 15 WOW Apple.mp4"
+                src="./media/Video-Iphone-15.mp4"
                 style="object-fit: cover; height: 100%"
                 autoplay
                 muted
@@ -79,26 +82,18 @@
               ></video>
               <div class="carousel-caption">
                 <h1>Goldcell</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Porro dicta cumque ullam iste laudantium voluptate amet
-                  obcaecati nostrum molestias natus aut asperiores
-                  reprehenderit, neque aliquid, aspernatur magni veniam alias
-                  qui.
+                <p class="opacity-25 text-center">
+                  Aqui temos a solução dos seus problemas.
                 </p>
               </div>
             </div>
             <div id="carousel-bg" class="carousel-item" data-bs-interval="5000">
-              <video
-                src="./media/Meet Xiaomi 14 Lens to legend.mp4"
-                autoplay
-                muted
-                loop
-              ></video>
+              <video src="./media/Xiaomi 14.mp4" autoplay muted loop></video>
               <div class="carousel-caption">
-                <div class="carousel-caption">
-                  <h2>Goldcell</h2>
-                </div>
+                <h1>Goldcell</h1>
+                <p class="opacity-25 text-center">
+                  Aqui temos a solução dos seus problemas.
+                </p>
               </div>
             </div>
           </div>
@@ -113,6 +108,7 @@
                   alt="interior da loja goldcell"
                 />
               </div>
+              <!--Sobre a loja (Aparece ao clicar)  -->
               <div class="col-md-7">
                 <h2 class="section-title">Sobre nossa <span>Loja</span></h2>
                 <p class="section-content">
@@ -203,6 +199,7 @@
           </div>
         </div>
       </section>
+      <!-- Serviços oferecidos -->
       <section id="services" class="pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -213,6 +210,7 @@
           </div>
           <div class="row pt-5">
             <div class="col-md-4">
+              <!-- Tabela de preços de tela  -->
               <div class="card scroll-on-hover">
                 <div class="card-body">
                   <h5 class="card-title section-title">
@@ -276,6 +274,7 @@
               </div>
             </div>
             <div class="col-md-4">
+              <!-- Aparelhos Mais Vendidos -->
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title section-title">
@@ -319,6 +318,7 @@
                 </div>
               </div>
             </div>
+            <!-- Área de Login do Cliente -->
             <div class="col-md-4">
               <div class="card">
                 <div class="card-body">
@@ -356,37 +356,64 @@
           </div>
         </div>
       </section>
+      <!-- Produtos -->
       <section id="products">
         <div class="container">
           <div class="row">
-            <h2 class="section-title text-center">
+            <h2 class="section-title text-center pb-3">
               <span><i class="bi bi-phone-fill"></i></span> Nossos
               <span>Celulares</span>
             </h2>
           </div>
+          <!-- Menu Lateral -->
           <div class="row">
             <aside class="col-md-2">
               <div class="nav nav-pills flex-column nav-menu">
-                <button type="button" class="btn-menu nav-link active">
+                <button
+                  data-bs-toggle="tab"
+                  data-bs-target="#NewCellPhones"
+                  type="button"
+                  class="btn-menu nav-link active"
+                >
                   Celulares Novos
                 </button>
-                <button type="button" class="btn-menu nav-link">
+                <button
+                  data-bs-toggle="tab"
+                  data-bs-target="#SemiNewCellPhones"
+                  type="button"
+                  class="btn-menu nav-link"
+                >
                   Celulares Semi-Novos
                 </button>
-                <button type="button" class="btn-menu nav-link">
+                <button
+                  data-bs-toggle="tab"
+                  data-bs-target="#accessories"
+                  type="button"
+                  class="btn-menu nav-link"
+                >
                   Acessórios
                 </button>
-                <button type="button" class="btn-menu nav-link">
+                <button
+                  data-bs-toggle="tab"
+                  data-bs-target="#order"
+                  type="button"
+                  class="btn-menu nav-link"
+                >
                   Aparelhos Disponíveis por encomenda
                 </button>
               </div>
             </aside>
             <div class="col-md-10">
               <div class="tab-content">
-                <div class="tab-pane active">
-                  <h6 class="text-center opacity-25">toque na descrição para verificar o resumo completo</h6>
+                <!-- Aparelhos Novos -->
+                <div id="NewCellPhones" class="tab-pane active">
+                  <h6 class="text-center">
+                    Passe o cursor <i class="bi bi-cursor"></i> ou toque
+                    <i class="bi bi-hand-index"></i> na descrição para
+                    visualizar o resumo completo com rolagem automática.
+                  </h6>
                   <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card" id="card-product">
                         <img
                           class="card-img-top"
@@ -415,14 +442,14 @@
                               para quem precisa de um smartphone acessível e
                               confiável.
                             </p>
-                            <div class="price">
-                              <p>R$2.0000</p>
-                            </div>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card" id="card-product">
                         <img
                           class="card-img-top"
@@ -452,14 +479,14 @@
                               smartphone avançado com recursos premium sem
                               comprometer o orçamento.
                             </p>
-                            <div class="price">
-                              <p>R$2.0000</p>
-                            </div>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card" id="card-product">
                         <img
                           class="card-img-top"
@@ -488,15 +515,14 @@
                               escolha para quem precisa de um dispositivo
                               confiável sem gastar muito.
                             </p>
-
-                            <div class="price">
-                              <p>R$2.0000</p>
-                            </div>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card" id="card-product">
                         <img
                           class="card-img-top"
@@ -514,27 +540,29 @@
                           </div>
                           <div class="text-container">
                             <p class="card-text">
-                              O Redmi 13C é a opção ideal para quem procura um
-                              smartphone econômico, mas com recursos de
-                              qualidade. Com uma tela de 6.3 polegadas, oferece
-                              um display claro e confortável para todas as suas
-                              atividades diárias. A bateria de longa duração
-                              assegura que você possa usar o telefone o dia
-                              inteiro, seja para chamadas, mensagens ou
-                              navegação na web. Seu design moderno e eficiente
-                              proporciona uma experiência de usuário agradável e
-                              prática, tornando o Redmi 13C uma excelente
-                              escolha para quem precisa de um dispositivo
-                              confiável sem gastar muito.
+                              O Samsung S24 eleva a experiência móvel a um novo
+                              patamar com sua impressionante tela Dynamic AMOLED
+                              de 6.7 polegadas, oferecendo cores vibrantes e
+                              nitidez incomparável. Equipado com um poderoso
+                              processador Exynos 2400, ele garante desempenho
+                              excepcional, seja em tarefas diárias ou em jogos
+                              exigentes. A câmera traseira de 108 MP captura
+                              fotos e vídeos com detalhes incríveis, mesmo em
+                              condições de pouca luz, enquanto a bateria de 5000
+                              mAh, com carregamento ultrarrápido, assegura que
+                              você fique conectado por mais tempo. Com design
+                              elegante e recursos inovadores, o Samsung S24 é a
+                              escolha ideal para quem busca um smartphone
+                              premium e sofisticado.
                             </p>
-                            <div class="price">
-                              <p>R$2.0000</p>
-                            </div>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card" id="card-product">
                         <img
                           class="card-img-top"
@@ -565,15 +593,14 @@
                               é perfeito para quem busca um smartphone com tela
                               ampla e capacidades robustas.
                             </p>
-
-                            <div class="price">
-                              <p>R$2.0000</p>
-                            </div>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card" id="card-product">
                         <img
                           class="card-img-top"
@@ -603,15 +630,14 @@
                               ideal para usuários que buscam o máximo em
                               tecnologia e inovação em um smartphone.
                             </p>
-
-                            <div class="price">
-                              <p>R$2.0000</p>
-                            </div>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card" id="card-product">
                         <img
                           class="card-img-top"
@@ -639,15 +665,14 @@
                               iPhone 15 uma escolha excelente para quem valoriza
                               inovação, qualidade e desempenho em um smartphone.
                             </p>
-
-                            <div class="price">
-                              <p>R$2.0000</p>
-                            </div>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                       <div class="card" id="card-product">
                         <img
                           class="card-img-top"
@@ -676,10 +701,144 @@
                               procura um smartphone de alto desempenho com as
                               últimas inovações tecnológicas.
                             </p>
-
-                            <div class="price">
-                              <p>R$2.0000</p>
-                            </div>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Aparelhos Usados -->
+                <div class="tab-pane" id="SemiNewCellPhones">
+                  <h6 class="text-center">
+                    Passe o cursor <i class="bi bi-cursor"></i> ou toque
+                    <i class="bi bi-hand-index"></i> na descrição para
+                    visualizar o resumo completo com rolagem automática.
+                  </h6>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card" id="card-product">
+                        <img
+                          class="card-img-top-used"
+                          src="/media/Produtos/x3 pro Usado.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="card-body">
+                          <a href="#" id="card-title-product">
+                            <h4 class="card-title">X3 Pro 128gb</h4>
+                          </a>
+                          <a href="#" class="stretched-link"
+                            ><i class="bi bi-bag"></i
+                          ></a>
+                          <div class="text-container">
+                            <p class="card-text">
+                              O X3 Pro 128GB usado é uma excelente opção para
+                              quem procura desempenho robusto a um preço
+                              acessível. Este dispositivo passou por uma troca
+                              de tela realizada recentemente, garantindo uma
+                              visualização impecável em sua tela de 6.67
+                              polegadas, como se fosse novo. Com seu processador
+                              Snapdragon 860, ele oferece fluidez em jogos e
+                              multitarefas, enquanto os 128GB de armazenamento
+                              proporcionam amplo espaço para seus aplicativos,
+                              fotos e vídeos. Embora seja um aparelho usado, ele
+                              mantém todas as suas funcionalidades originais,
+                              tornando-se uma escolha inteligente para quem
+                              busca um smartphone poderoso e confiável.
+                            </p>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Acessórios -->
+                <div class="tab-pane" id="accessories">
+                  <h6 class="text-center">
+                    Passe o cursor <i class="bi bi-cursor"></i> ou toque
+                    <i class="bi bi-hand-index"></i> na descrição para
+                    visualizar o resumo completo com rolagem automática.
+                  </h6>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card" id="card-product">
+                        <img
+                          class="card-img-top-used"
+                          src="/media/Produtos/JBL.png"
+                          alt="Card image cap"
+                        />
+                        <div class="card-body">
+                          <a href="#" id="card-title-product">
+                            <h4 class="card-title">JBL Mini</h4>
+                          </a>
+                          <a href="#" class="stretched-link"
+                            ><i class="bi bi-bag"></i
+                          ></a>
+                          <div class="text-container">
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Magnam consequatur deserunt ut sapiente sint
+                              enim iusto fugiat distinctio tempora corporis, eos
+                              incidunt? Voluptatum quasi, optio officia hic sit
+                              velit at! Lorem ipsum dolor sit, amet consectetur
+                              adipisicing elit. Dolor rem, perferendis, id
+                              doloremque minus magnam obcaecati illum dicta
+                              laudantium necessitatibus dolorem iusto
+                              accusantium illo et nisi sint molestias, rerum
+                              sequi.
+                            </p>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sob Encomenda -->
+                <div class="tab-pane" id="order">
+                  <h6 class="text-center">
+                    Passe o cursor <i class="bi bi-cursor"></i> ou toque
+                    <i class="bi bi-hand-index"></i> na descrição para
+                    visualizar o resumo completo com rolagem automática.
+                  </h6>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card" id="card-product">
+                        <img
+                          class="card-img-top-used"
+                          src="/media/Produtos/Iphone 14.png"
+                          alt="Card image cap"
+                        />
+                        <div class="card-body">
+                          <a href="#" id="card-title-product">
+                            <h4 class="card-title">Iphone 14</h4>
+                          </a>
+                          <a href="#" class="stretched-link"
+                            ><i class="bi bi-archive"></i
+                          ></a>
+                          <div class="text-container">
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Magnam consequatur deserunt ut sapiente sint
+                              enim iusto fugiat distinctio tempora corporis, eos
+                              incidunt? Voluptatum quasi, optio officia hic sit
+                              velit at! Lorem ipsum dolor sit, amet consectetur
+                              adipisicing elit. Dolor rem, perferendis, id
+                              doloremque minus magnam obcaecati illum dicta
+                              laudantium necessitatibus dolorem iusto
+                              accusantium illo et nisi sint molestias, rerum
+                              sequi.
+                            </p>
+                          </div>
+                          <div class="price">
+                            <p>R$2.0000</p>
                           </div>
                         </div>
                       </div>
@@ -691,8 +850,62 @@
           </div>
         </div>
       </section>
+      <!-- Asssistencia Técnica -->
+      <section id="technical" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              <span><i class="bi bi-search"></i></span> Deixe sua 
+              <span>Opinião</span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              <form>
+                <div>
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" class="form-control" required />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control" />
+                  <small>Opcional</small>
+                </div>
+                <div>
+                  <label for="phone">Telefone/Whatsapp</label>
+                  <input type="tel" id="phone" class="form-control" required />
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+              </form>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <h3>Endereço</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.9335753198434!2d-42.081633723890064!3d-21.666441180147306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbd1139ac8b08c5%3A0x94c71efb9a19147b!2sGold%20Cell!5e0!3m2!1spt-BR!2sbr!4v1724000924323!5m2!1spt-BR!2sbr" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-
+    <footer>
+      <div class="footer">
+          <div class="card-brands">
+              <img src="https://img.icons8.com/?size=100&id=OIF51EoB6cRJ&format=png&color=000000" alt="MasterCard">
+              <img src="https://img.icons8.com/?size=100&id=pNfxhf2SghvK&format=png&color=000000" alt="Visa">
+              <img src="https://img.icons8.com/?size=100&id=Dk4sj0EM4b20&format=png&color=000000" alt="American Express">
+              <img src="https://img.icons8.com/?size=100&id=77599&format=png&color=000000" alt="Diners Club">
+          </div>
+          <div>
+              <small class="text-muted">Criado por Huylquias Santana - EBAC - 2024</small>
+          </div>
+          <div class="card-reclame">
+              <a href="https://www.reclameaqui.com.br" target="_blank" rel="noopener noreferrer">
+                  <img src="https://blog.reclameaqui.com.br/wp-content/uploads/2024/03/logo-ra-footer.svg" alt="Reclame Aqui">
+              </a>
+          </div>
+      </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
